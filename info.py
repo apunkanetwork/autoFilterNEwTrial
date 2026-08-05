@@ -55,11 +55,11 @@ DATABASE_NAME = environ.get("DATABASE_NAME", "OxylinkFilter")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "OxylinkFilter")
 
 # ---------------- Shortener ----------------
-SHORTENER_SITE = environ.get("SHORTENER_SITE", "")   # e.g. shrinkme.io
-SHORTENER_API = environ.get("SHORTENER_API", "")     # your api key
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "")  # how-to-open-link video url
+SHORTENER_SITE = environ.get("SHORTENER_SITE", "oxylink.xyz")   # e.g. shrinkme.io
+SHORTENER_API = environ.get("SHORTENER_API", "0206a315f62b190a50c8160a2e8a6bf0f10f674c")     # your api key
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Rrrkup")  # how-to-open-link video url
 IS_SHORTENER = is_enabled(environ.get("IS_SHORTENER"), True)
-VERIFY_HOURS = int(environ.get("VERIFY_HOURS", "24"))  # access time after 1 shortlink
+VERIFY_HOURS = int(environ.get("VERIFY_HOURS", "1"))  # access time after 1 shortlink
 
 # ---------------- Premium / Trial ----------------
 FREE_TRIAL_CLICKS = int(environ.get("FREE_TRIAL_CLICKS", "2"))
