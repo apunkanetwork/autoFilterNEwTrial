@@ -79,7 +79,7 @@ QUALITIES = ["360p", "480p", "720p", "1080p", "2160p", "4k", "hdrip", "webrip",
              "web-dl", "hdcam", "predvd", "bluray"]
 
 PICS = (environ.get("PICS") or
-        "https://telegra.ph/file/6f0b4d8f0dfe1a2d3b9d7.jpg").split()
+        "https://cdn.corenexis.com/f/63qiYZerBYa.png").split()
 
 # ---------------- Web server (keep-alive for VPS/Koyeb/Render) ----------------
 PORT = int(environ.get("PORT", "8080"))
