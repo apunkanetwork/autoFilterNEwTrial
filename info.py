@@ -30,21 +30,21 @@ def to_int_list(value):
 
 
 # ---------------- Telegram / Pyrogram ----------------
-API_ID = int(environ.get("API_ID", "0"))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
-BOT_USERNAME = environ.get("BOT_USERNAME", "")  # without @ (optional, auto-detected)
+API_ID = int(environ.get("API_ID", "31069806"))
+API_HASH = environ.get("API_HASH", "f603b3f6647de8b8e7f67ed20a90fd3a")
+BOT_TOKEN = environ.get("BOT_TOKEN", "5247512007:AAH7YrPEv-8K_GwZA1C-3NV4j3L-mb3x-zA")
+BOT_USERNAME = environ.get("BOT_USERNAME", "Movies_Filter56_Bot")  # without @ (optional, auto-detected)
 WORKERS = int(environ.get("WORKERS", "50"))
 SESSION = environ.get("SESSION", "AutoFilterBot")
 
 # ---------------- Admins / Channels ----------------
-ADMINS = to_int_list(environ.get("ADMINS", ""))
+ADMINS = to_int_list(environ.get("ADMINS", "1412758888"))
 # Channels where your files live (bot must be admin there)
-CHANNELS = to_int_list(environ.get("CHANNELS", ""))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "0") or 0)
-SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "")          # @yoursupportgroup
-SUPPORT_LINK = environ.get("SUPPORT_LINK", "https://t.me/")
-OWNER_USERNAME = environ.get("OWNER_USERNAME", "admin")  # for "Buy Premium" contact
+CHANNELS = to_int_list(environ.get("CHANNELS", "-1001502435182"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001637312289") or 0)
+SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "Oxyver_Support")          # @yoursupportgroup
+SUPPORT_LINK = environ.get("SUPPORT_LINK", "https://t.me/Rrrkup")
+OWNER_USERNAME = environ.get("OWNER_USERNAME", "Rrrkup")  # for "Buy Premium" contact
 
 # Force subscribe (0 = disabled). Bot must be admin in that channel.
 AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "0") or 0)
