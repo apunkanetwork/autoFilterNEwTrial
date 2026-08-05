@@ -50,9 +50,9 @@ OWNER_USERNAME = environ.get("OWNER_USERNAME", "Rrrkup")  # for "Buy Premium" co
 AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", "0") or 0)
 
 # ---------------- Database ----------------
-DATABASE_URI = environ.get("DATABASE_URI", "")
-DATABASE_NAME = environ.get("DATABASE_NAME", "AutoFilterBot")
-COLLECTION_NAME = environ.get("COLLECTION_NAME", "Telegram_files")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://khatunamina513_db_user:8cBIdvkFSh9NBzZm@oxylinkfilter.zr98rnb.mongodb.net/?appName=OxylinkFilter")
+DATABASE_NAME = environ.get("DATABASE_NAME", "OxylinkFilter")
+COLLECTION_NAME = environ.get("COLLECTION_NAME", "OxylinkFilter")
 
 # ---------------- Shortener ----------------
 SHORTENER_SITE = environ.get("SHORTENER_SITE", "")   # e.g. shrinkme.io
